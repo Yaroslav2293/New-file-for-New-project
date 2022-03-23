@@ -1,0 +1,36 @@
+// footer
+.footer {
+  max-width: 1210px;
+  width: 100%;
+  margin: 0 auto;
+  @include media-down('small') {
+    margin: 0 10px;
+  }
+}
+
+.footer__flex {
+  @extend %flex-container;
+  align-items: center;
+  @include media-down('small') {
+    justify-content: center;
+  }
+}
+
+.footer__logo {
+  padding: 36px 0 31px 0;
+}
+
+.footer__subtitle {
+  padding: 0 10px 0 0;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  letter-spacing: 0.1px;
+  color: #5C5C5C;
+  @include media-down('small') {
+    display: none;
+  }
+}
+// footer

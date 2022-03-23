@@ -1,4 +1,4 @@
-// menu burger
+//menu burger
 const button = document.getElementById('burger-btn');
 const mainMenu = document.getElementById('header-menu-hidden');
 
@@ -25,4 +25,4 @@ function toggleMenu() {
 
   isHiddenMenu = !isHiddenMenu;
 }
-// /menu burger
+//menu burger

@@ -1,0 +1,333 @@
+//restaurant__app
+.restaurant {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  &__bg {
+    background: url("../img/restaurant_fon.png") no-repeat;
+  }
+
+  &__content {
+    max-width: 800px;
+    width: 100%;
+    padding: 80px 0 162px 0;
+    margin: 0 auto;
+    @include media-down('sm') {
+      padding: 40px 20px;
+    }
+  }
+
+  &__title_h3 {
+    max-width: 196px;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #F7F7F7;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    @include media-down('sm') {
+      font-size: 20px;
+    }
+  }
+
+  &__title_h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+    @include media-down('sm') {
+      font-size: 40px;
+    }
+    @include media-down('xs') {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  &__title_h4 {
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 78px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #F7F7F7;
+    @include media-down('xs') {
+      padding-bottom: 40px;
+    }
+  }
+
+  .restaurant__btn {
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+    @extend %flex-container;
+
+    @include media-down('sm') {
+      max-width: 500px;
+    }
+
+    @include media-down('xs') {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &_delivery {
+      max-width: 236px;
+      width: 100%;
+      padding: 16px 58px 16px 73px;
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 0.1px;
+      color: #FFFFFF;
+      box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+      border: 1px solid #FFFFFF;
+      box-sizing: border-box;
+      border-radius: 30px;
+      background: transparent;
+      transition: 0.5s;
+      @include media-down('xs') {
+        margin-bottom: 10px;
+        line-height: normal;
+      }
+    }
+
+    &_menu {
+      max-width: 236px;
+      width: 100%;
+      padding: 16px 82px;
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 0.1px;
+      color: #FFFFFF;
+      border: 1px solid #FFFFFF;
+      box-sizing: border-box;
+      border-radius: 30px;
+      background: transparent;
+      transition: 0.5s;
+      @include media-down('xs') {
+        line-height: normal;
+      }
+    }
+    
+    &_delivery:hover,
+    &_menu:hover {
+      background: #FA4A0C;
+      box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+      border: none;
+    }
+
+    
+  }
+}
+
+//restaurant__app
+
+// How-the-app-works
+.How-the-app-works {
+  max-width: 1105px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0 80px 0;
+  @include media-down('lg') {
+    padding: 0 20px 40px;
+  }
+}
+
+.app-works__h2 {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  color: #000000;
+  opacity: 0.8;
+  text-align: center;
+  padding: 55px 0 70px 0;
+  @include media-down('l') {
+    padding: 20px;
+    font-size: 35px;
+  }
+}
+
+.app-works__flex {
+  @extend %flex-container;
+  align-items: center;
+  @include media-down('l') {
+    flex-direction: column;
+  }
+}
+.app-works__img,
+.app-works__img2 {
+  @include media-down('l') {
+    margin-bottom: 20px;
+  }
+}
+
+.app-works__block-title {
+  max-width: 568px;
+  width: 100%;
+  @include media-down('l') {
+    text-align: center;
+  }
+
+  h3 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #FA4A0C;
+    padding-bottom: 17px;
+  }
+  h2 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    padding-bottom: 27px;
+    @include media-down('small') {
+      font-size: 22px;
+      line-height: 25px;
+    }
+  }
+  h4 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.2px;
+    color: #737373;
+  }
+
+}
+
+.app-works__flex_reverse {
+  flex-direction: row-reverse;
+  @include media-down('l') {
+    flex-direction: column;
+  }
+}
+
+.explore-varieties {
+  padding-bottom: 42px;
+}
+
+// How-the-app-works
+
+// order
+.order {
+  padding:0 0 77px 0;
+  @include media-down('small') {
+    padding:0 0 25px 0;
+  }
+
+  &__bg {
+    background: url("../img/Order_fon.png") no-repeat;
+  }
+
+  &__content {
+    padding: 147px 0 131px 0;
+    max-width: 1105px;
+    width: 100%;
+    margin: 0 auto;
+    @include media-down('small') {
+      padding: 25px;
+    }
+    h2 {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 57px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #FFFFFF;
+      padding-bottom: 20px;
+      @include media-down('small') {
+        font-size: 32px;
+      }
+    }
+    h4 {
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 38px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #FFFFFF;
+      padding-bottom: 77px;
+      @include media-down('small') {
+        line-height: 30px;
+        font-size: 20px;
+        padding-bottom: 25px;
+      }
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+    max-width: 331px;
+    @extend %flex-container;
+    @include media-down('small') {
+      flex-direction: column;
+    }
+
+    &-playstore {
+      padding: 16px 31px;
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.2px;
+      color: #FFFFFF;
+      border-radius: 10px;
+      background: transparent;
+      border: 1px solid #fff;
+      transition: 0.5s;
+      @include media-down('small') {
+        margin-bottom: 20px;
+      }
+    }
+  
+    &-app-store {
+      padding: 16px 45px;
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.2px;
+      color: #FFFFFF;
+      border-radius: 10px;
+      background: transparent;
+      border: 1px solid #fff;
+      transition: 0.5s;
+    }
+    &-playstore:hover,
+    &-app-store:hover {
+      background: #FA4A0C;
+      box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+      border: none;
+    }
+  }
+}
+
+// order
